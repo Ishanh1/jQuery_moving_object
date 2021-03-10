@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ractangle Div</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+
+        }
+        div h2{
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script> $(document).ready(function(){
+            $("div").animate({
+                left:300
+            }, 1000);
+            $("div").animate({
+                top:300
+            },1000);
+            $("div").animate({
+                left:0
+            },1000);
+            $("div").animate({
+                top:0
+            },1000);
+        })
+    </script>
+</head>
+<body>
+    <div ><h2>Hello World</h2></div>
+</body>
+</html> 
